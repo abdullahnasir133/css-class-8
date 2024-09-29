@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Min max function</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                padding: 0 0 0 40px;
+            }
+            .container{
+                background: wheat;
+                width: 80%;
+                margin: 45px auto 0;
+
+                display: grid;
+                grid-template-columns: minmax(150px,300px) 1fr 1fr 1fr 1fr min-content;
+                grid-template-rows: repeat(2,minmax(150px, min-content));
+                grid-gap: 5px;
+            }
+            .item1{
+                background: orangered;
+            }
+            .item2{
+                background: greenyellow;
+            }
+            .item3{
+                background: purple;
+            }
+            .item4{
+                background: pink;
+            }
+            .item5{
+                background: yellow;
+            }
+            .item6{
+                background: gray;
+            }
+            .item7{
+                background: gray;
+            }
+            .item8{
+                background: gray;
+            }
+            .items{
+                color: #fff;
+                font-size: 20px;
+                font-weight: 8px;
+            }
+
+
+        </style>
+    </head>
+    <div class="container">
+        <div class="items item1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three 1</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">eight</div>
+
+    </div>
+</html>

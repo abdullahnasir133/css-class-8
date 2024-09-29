@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>implicite and explicite</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{padding: 0 0 0 40px;
+            }
+            .container{
+                background: #eee;
+                width: 650px;
+                margin: 45px auto 0;
+
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,120px);
+                grid-gap: 15px;
+                /*1grid-auto-rows 2grid-auto columns 3grid-auto-flows*/
+                grid-auto-rows: 80px;
+                grid-auto-flow: column;
+
+                grid-auto-columns: .5fr;
+            }
+            .item1{background: orangered;}
+            .item2{background: blueviolet;}
+            .item3{background: orangered;}
+            .item4{background: skyblue;}
+            .item5{background: orangered;}
+            .item6{background: green;}
+            .item7{background: orangered;}
+            .item8{background: purple;}
+
+            .items{
+                color: #fff;
+                font-size: 20px;
+                font-weight: 8px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items item1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="items item2">Two</div>
+            <div class="items item3">Three 1</div>
+            <div class="items item4">Four</div>
+            <div class="items item5">Five</div>
+            <div class="items item6">Six</div>
+            <div class="items item7">Seven</div>
+            <div class="items item8">eight</div>
+    
+        </div>
+    </body>
+
+</html>
